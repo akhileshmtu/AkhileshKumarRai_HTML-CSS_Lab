@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        header{
+            font-weight: bolder;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            background-color:red;  
+        }
+
+        body{
+            margin: 0%;
+            height: auto  ;
+        }
+
+        .parent-menu {
+            background-color: darkgray;
+            list-style-type: none;
+            margin: 0%;
+            font-size: 0.25in;
+        }
+        .parent-menu > li {
+            display: inline-block;
+        }
+        .parent-menu > li > a {
+            text-decoration: none;
+            padding: 0.75em;
+            color: white;
+        }
+        .parent-menu > li > a:hover{
+            background-color: black;
+            padding: 0%;
+            
+            
+        }
+        .child-menu{
+            background-color: lightgray;
+            list-style-type: none;
+            position: absolute;
+            top: 30px;
+            left: -25px;
+            white-space: nowrap;
+            
+           /* display: none;*/
+
+        }
+        .item-conting-child-menu{
+            position: relative;
+        }
+        .child-defaul-display{
+            display: none;
+            
+        }
+        .item-conting-child-menu:hover .child-menu{
+            display: block;
+            
+        }
+        .child-defaul-display >li > a{
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Demo of Dropdown</h1>
+    </header>
+    <nav>
+        <ul class="parent-menu">
+            <li>
+                <a href="">Link 1</a>
+            </li>
+                
+            <li class="item-conting-child-menu">
+                 <a href="">Link 2</a>
+                <ul class="child-menu child-defaul-display">               
+                    <li>
+                        <a href="">DD_Link1</a>
+                    </li>
+                    <li>
+                        <a href="">DD_Link2</a>
+                    </li>
+                    <li>
+                        <a href="">DD_Link3</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="item-conting-child-menu">
+                <a href="">Link 3</a>
+               <ul class="child-menu child-defaul-display">               
+                   <li>
+                       <a href="">DD_Link1</a>
+                   </li>
+                   <li>
+                       <a href="">DD_Link2</a>
+                   </li>
+                   <li>
+                       <a href="">DD_Link3</a>
+                   </li>
+               </ul>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart Bar</title>
+    <style>
+        
+  .sectionClass{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 10%;
+    left:40%;
+}
+.sectionClass article{
+    display: inline-block;
+}
+p{
+    padding-left: 20px;
+  
+}
+div{
+    width: 40px;
+    height: 300px;
+    margin: 20px;
+    background-color: rgb(202, 198, 192);
+}
+#barOne{
+    background-color: white;
+    width: 100%;
+    height: 70%;
+    animation-name: barOneAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes barOneAnimation {
+    0%{
+        height: 100%;
+        background-color: white;
+    }
+    100%{
+        height: 70%;
+        background-color: white;
+    }
+} 
+#barTwo{
+    width: 100%;
+    background-color: white;
+    height: 60%;
+    animation-name: barTwoAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+ @keyframes barTwoAnimation {
+    0%{
+        height: 100%;
+        background-color: white;
+    }
+    100%{
+        height: 60%;
+        background-color: white;
+    }
+}
+#barThree{
+    background-color: white;
+    width: 100%;
+    height: 20%;
+    animation-name: barThreeAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes barThreeAnimation {
+    0%{
+        height: 100%;
+        background-color: white;
+    }
+    100%{
+        height: 20%;
+        background-color: white;
+    }
+}
+    </style>
+</head>
+<body>
+    <section class="sectionClass">
+    <article>
+        <div>
+            <article id="barOne"> 
+            </article>
+        </div>
+        <p>30%</p>
+    </article>
+    <article>
+        <div>
+            <article id="barTwo"> 
+            </article>
+        </div>
+        <p>40%</p>
+    </article>
+    <article>
+        <div>
+            <article id="barThree"> 
+            </article>
+        </div>
+        <p>80%</p>
+    </article>
+    <h1 style="text-align: center;">Bar Plot</h1>
+</section>
+</body>
+</html>
